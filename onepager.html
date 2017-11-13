@@ -3,8 +3,18 @@
 <head>
 <meta charset="utf-8">
 <title>jQuery</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+<!-- loading jQuery from server -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- embedded javascript JS-->
 <script type="text/javascript">
+	// the famous document.ready function, takes an anonymous function as argument
+	$(document).ready(function(){
+		
+		$("#jsterror").click(myFunction)
+		
+	});
+	
+	// a custom function 
 	function myFunction(){
 	// a statement, closed with semicolon
 	// standard function alert, taking argument type string (plain text)
@@ -12,7 +22,8 @@
 	// opening a new page in a tab
 		window.open("https://jquery.com", "_blank");
 	}
-	document.getElementById("jsterror").addEventListener("click", myFunction);
+	// classic JS:
+	// document.getElementById("jsterror").addEventListener("click", myFunction);
 </script>
 </head>
 
